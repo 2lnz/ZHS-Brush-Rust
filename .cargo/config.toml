@@ -1,0 +1,15 @@
+# 链接统一用工具链自带的 rust-lld：
+# - 不依赖 MSVC / MinGW 的 gcc、dlltool；
+# - mingw 的 ld 处理不了含中文的工程路径（按 GBK 字节解析后报
+#   "cannot open output file"），rust-lld 没有这个问题。
+#
+# 目标选 x86_64-pc-windows-gnullvm：windows-sys 等 crate 在这个目标下
+# 用的是预生成导入库，不需要 dlltool。
+
+[target.x86_64-pc-windows-gnullvm]
+linker = "rust-lld"
+rustflags = ["-C", "linker-flavor=ld.lld", "-C", "link-self-contained=yes"]
+
+[target.x86_64-pc-windows-gnu]
+linker = "rust-lld"
+rustflags = ["-C", "link-self-contained=yes"]

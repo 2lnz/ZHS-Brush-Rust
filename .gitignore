@@ -1,0 +1,16 @@
+/target
+/toolchain
+*.pdb
+*.exe
+!.gitkeep
+# 运行时产物（由程序生成，不入库）
+config.json
+cookies.json
+execution.json
+ai_courses.json
+logs/
+qr/
+build_error.log
+homework/
+.homework.lock
+shared_test_cookies.json
