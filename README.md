@@ -1,11 +1,13 @@
 # ZHS-Brush-RUST
 
-智慧树 / 知到 课程学习工具，Rust 重写。协议、加密参数与刷课节奏对齐原 Python 项目
-`ZHS-Fucker-Pro`，界面用 egui 实现，编译产物是单文件 exe，不依赖 Python 环境。
-
-<p align="left">
-  <img src="assets/icon.png" width="96" alt="ZHS-Brush-RUST">
+<p align="center">
+  <img src="assets/icon.png" width="120" alt="ZHS-Brush-RUST">
 </p>
+
+<h1 align="center">ZHS-Brush-RUST</h1>
+
+![License](https://img.shields.io/badge/license-Apache--2.0-blue)
+
 
 | | |
 |---|---|
